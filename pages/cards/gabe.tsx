@@ -1,17 +1,13 @@
 import Link from 'next/link';
-import Image from 'next/image'
-import React from 'react';
+import Image from 'next/image';
+import gabePic from '../../public/images/gabe.jpg';
 
 export default function gabe() {
     return (
         <>
             <h1>Gabe Corsini</h1>
-            <p>
-                <Image src="images/gabe.jpg" alt="Gabe Corsini" />
-            </p>
-            <footer>
-                <Link href="/">Home</Link>
-            </footer>
+            <Image src={gabePic} alt="Gabe Corsini" width={300} height={300}/>
+            <Link href="/">Home</Link>
         </>
     );
 }
